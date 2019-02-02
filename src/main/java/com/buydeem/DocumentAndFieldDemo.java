@@ -26,10 +26,10 @@ public class DocumentAndFieldDemo {
      * LongPoint: 对long类型索引,不存储
      * FloatPoint: 对float类型索引,不存储
      * DoublePoint: 对double类型索引,不存储
-     * SortedDocValuesField: 为每个Document存储一个这样的Field,这个field会存储一个String值，可以利用它来实现排序和打分
-     * SortedSetDocValuesField: 为每个Document存储一个这样的Field,这个field会存储一组String值，可以利用它来实现排序和打分
-     * NumericDocValuesField: 为每个Document存储一个这样的Field,这个field会存储一个long值，可以利用它来实现排序和打分
-     * SortedNumericDocValuesField: 为每个Document存储一个这样的Field,这个field会存储一组long值，可以利用它来实现排序和打分
+     * SortedDocValuesField: field会存储一个String值，可以利用它来实现排序和打分
+     * SortedSetDocValuesField: field会存储一组String值，可以利用它来实现排序和打分
+     * NumericDocValuesField: field会存储一个long值，可以利用它来实现排序和打分
+     * SortedNumericDocValuesField: field会存储一组long值，可以利用它来实现排序和打分
      * StoredField: 为字段创建一个只存储的Field
      *
      * 上面是Lucene默认提供的,但是我们自己可以自定义Field,通过给Field设置IndexableFieldType可以实现自己想要的效果
